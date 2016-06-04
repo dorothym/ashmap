@@ -1,7 +1,9 @@
 # Ash Map NYC
 
 ## Application purpose
-An interactive map of ash trees in New York City based on 2015 Tree Census Data.
+An interactive map of ash trees in New York City based on 2015 Tree Census Data, built for the one-day [TreesCount Data Jam](http://treescountdatajam.devpost.com).
+
+It was designed to help answer the [question](http://treescountdatajam.devpost.com/updates/5447-treescount-data-jam-challenges), "How can we use tree census data to identify areas at risk from threats to the urban forest, such as the Emerald Ash Borer?"
 
 ## What qualifies as an ash tree for the purposes of this application?
 
@@ -9,17 +11,11 @@ An interactive map of ash trees in New York City based on 2015 Tree Census Data.
 
 ## Notes on data
 
-I visited https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/pi5s-9p35 on June 3, 2016 and selected Download > Download without geospatial data > Download as CSV.
+I visited the [2015 Tree Census Data Site](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/pi5s-9p35) on June 3, 2016 and selected Download > Download without geospatial data > Download as CSV.
 
-I sorted that file by Latin name (`spc_latin`). I chopped off all rows that did not contain Fraxinus. This left 12,789 rows. 
+I sorted that file by Latin name (`spc_latin`). I chopped off all rows that did not contain Fraxinus. This left 12,789 rows, representing 12,789 Fraxius trees.
 
-For a proof of concept, I limited the 12,000 to trees in the Bronx (again by sorting the CSV file).
-
-For the final display, I took 1,000 of the 2,000+ ash trees in the Bronx, just to have something to show at the end of hack day.
-
-### Notes on data set
-
-* This data set may contain incomplete data for Brooklyn and Queens as of 6/3, according to the data owners.
+To build a proof of concept, I decided to focus on trees in the Bronx, since Parks Department staff told us that would probably be one of the first areas in NYC where the emerald ash borer would hit. 
 
 ## Libraries and frameworks used
 I used Node, Express, Bootstrap, Leaflet, Angular, and jQuery.
