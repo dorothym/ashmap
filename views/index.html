@@ -1,15 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="/" />
     <meta charset="utf-8">
-	<script src="/angular/angular.js"></script>
-	<script src="/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="/angular/angular.min.js"></script>
+	<script src="/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="/jquery/dist/jquery.min.js"></script>
+	<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script src="/map.js"></script>
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />	
+	<link rel="stylesheet" href="/style.css">
+
 </head>
-<body ng-app="ashmap">
+<body>
 <h1>Ash Map</h1>
 
-<ui-view>
-</ui-view> 
+<div ng-app="ashmap">
+	<ui-view>
+	</ui-view> 
+</div>
 
 </body>
 </html>

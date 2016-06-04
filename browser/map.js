@@ -6,7 +6,8 @@ app.config(function ($urlRouterProvider, $locationProvider) {
 });
 
 app.controller('MapCtrl', function($scope) {
-})
+	$scope.foo = "bar"
+});
 
 app.config(function ($stateProvider) {
     $stateProvider.state('map', {
@@ -14,11 +15,8 @@ app.config(function ($stateProvider) {
         templateUrl: 'map.html',
         controller: 'MapCtrl'
     });
-
 });
 
-app.factory('MapFactory', function ($http, $q) {
-
-	return GeoFactory;
-
-});
+// app.factory('MapFactory', function ($http) {
+// 	return MapFactory;
+// });
