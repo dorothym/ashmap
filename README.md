@@ -9,13 +9,15 @@ I visited https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree
 
 Within that file, meta.data is an array of arrays. Each internal array represents one tree.
 
+### Notes on data set
+
+* This data set contains 648 occurences of "Fraxinus."
+* This data set may contain incomplete data for Brooklyn and Queens.
 
 ## What qualifies as an ash tree?
 
 * Any tree whose Latin name (`spc_latin`) contains "Fraxinus".
 
-## Additional notes
-
-* This data set contains 648 occurences of "Fraxinus."
-* This data set may contain incomplete data for Brooklyn and Queens.
+## Libraries and frameworks used
+I used Node, Express, Bootstrap, Leaflet, Angular, and jQuery (along with a bunch of other Node modules).
 
