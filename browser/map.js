@@ -1021,9 +1021,9 @@ app.controller('MapCtrl', function($scope) {
 		console.log("working",i)
 		item = treeArray[i];
 
-		popuptext = "Tree ID: " + item[1] + "<br>xpos: " + item[39] + "<br>ypos:" + item[40]
-		console.log("latlong",item[37],item[38]);
-		console.log("popuptext",popuptext);
+		popuptext = "Tree ID: " + item[1] + "<br>X coord: " + item[39] + "<br>Y coord:" + item[40] + "<br>Health: " + item[8];
+		// console.log("latlong",item[37],item[38]);
+		// console.log("popuptext",popuptext);
 
 		marker = new L.marker([item[37],item[38]], {
 			color: 'red'
