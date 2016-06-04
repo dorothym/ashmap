@@ -21,8 +21,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 /* api */
 
-app.get('/api/bronx', function(req,res) {
-	console.log("bronx");
+app.get('/test', function(req,res) {
+	var treefile = require("./data/bad_data.json");
+	console.log("Reading file",treefile.meta.data[0])
 });
 
 module.exports = app;

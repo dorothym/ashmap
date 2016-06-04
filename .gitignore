@@ -1,2 +1,8 @@
 node_modules
 .DS_Store
+all_boros.csv
+chop1.csv
+chop2.csv
+fraxinus.csv
+fraxinusdata.js
+output1.csv
