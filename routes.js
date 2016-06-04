@@ -8,22 +8,6 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// app.use(express.static(path.join(__dirname, './node_modules')));
-// app.use(express.static(path.join(__dirname, './browser')));
-// app.use(express.static(path.join(__dirname, './data')));
-
 app.use(bodyParser.urlencoded({ extended: false }));
-
-// app.get('/', function(req,res) {
-// 	var response = '<h2>Test</h2>'
-// 	res.send(response)
-// });
-
-/* api */
-
-app.get('/test', function(req,res) {
-	var treefile = require("./data/bad_data.json");
-	console.log("Reading file",treefile.meta.data[0])
-});
 
 module.exports = app;
